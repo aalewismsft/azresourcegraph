@@ -10,7 +10,7 @@ resources
 
 ### 2. List all VMs attached to a workspace
 
-``kql
+```kql
 Heartbeat
 | summarize arg_max(TimeGenerated, *) by Category, Computer, _ResourceId
 | extend Workspace = tostring(split(_ResourceId, '/')[4])
