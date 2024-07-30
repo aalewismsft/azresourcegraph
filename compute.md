@@ -1,4 +1,4 @@
-# List VM Extensions, Extension Publisher and Version
+### 1. List VM Extensions, Extension Publisher and Version
 
 ```kql
 resources
